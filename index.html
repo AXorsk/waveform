@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Waveform</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./style.css">
+	<script src="./script.js"></script>
+</head>
+
+<body>
+	<section id='main' class='f fc sa'>
+		<div id='alert' class='f fc'>
+			<p>
+				Copyright &copy; 2020 Hacker_LTY
+				<br /><br />
+				All right reserved
+			</p>
+		</div>
+		<div id='start'>Start / Stop</div>
+		<canvas></canvas>
+		<p class='label frq'>Wave Frequency: 440Hz</p>
+		<input id='freq' type='range' min='-24000' max='24000' value='440' />
+		<p class='label demo'>Demo</p>
+		<div id='arrays' class='f fw sa'>
+			<div class='update f fc'>
+				<div class='f sa waves'>
+					<div class='wave'>Sine</div>
+					<div class='wave'>Tri</div>
+					<div class='wave'>Saw</div>
+					<div class='wave'>Square</div>
+				</div>
+				<p class='label wave'>Custom</p>
+				<input id='arrAmt' type='number' value='17' />
+				<input id='enter' type='submit' for='arrAmt' value="Submit">
+			</div>
+			<div class='array-box f fw sa'>
+				<p class="label">Array X</p>
+				<div class='item-box f fw sa'>
+				</div>
+			</div>
+			<div class='array-box f fw sa'>
+				<p class="label">Array Y</p>
+				<div class='item-box f fw sa'>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
